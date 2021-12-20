@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+body {
+  margin: 0px;
+}
+
+.navbar {
+  padding: 3px;
+  background-color: #fff;
+  z-index: 30;
+}
+
+.navbar #toggle-btn1 {
+  width: 22px;
+  height: 22px;
+  margin: 2px;
+}
+
+.navbar #toggle-btn1:hover {
+  cursor: pointer;
+}
+
+.navbar #logo {
+  width: 100px;
+}
+
+.navbar .help-text {
+  float: right;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  margin: 7px;
+}
+
+.navbar .user-profile-container {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+.navbar .user-profile-container:hover .user-profile-dropdown-section {
+  display: block;
+}
+
+.navbar .user-profile-container span {
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.navbar .user-profile-container .user-profile-dropdown-section {
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  display: none;
+}
+
+.navbar .user-profile-container .user-profile-dropdown-section ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.navbar .user-profile-container .user-profile-dropdown-section ul li {
+  padding: 10px 20px;
+  text-align: left;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .user-profile-container .user-profile-dropdown-section ul li:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.navbar .user-profile-container .user-profile-dropdown-section ul li .user-profile-dropdown-icons {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.drawer {
+  z-index: 100;
+  z-index: 35;
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  left: -310px;
+  width: 300px;
+  background-color: #fff;
+}
+
+.drawer .sidebar-nav {
+  background-color: #f7f7f7;
+  padding: 5px;
+}
+
+.drawer .sidebar-nav #toggle-btn2 {
+  width: 22px;
+  height: 22px;
+  margin: 2px;
+}
+
+.drawer .sidebar-nav #toggle-btn2:hover {
+  cursor: pointer;
+}
+
+.drawer .sidebar-nav #logo2 {
+  width: 100px;
+}
+
+.drawer .inner-drawer-container {
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.drawer .inner-drawer-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.drawer .inner-drawer-container::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.drawer .inner-drawer-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.drawer .inner-drawer-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.step1-ul, .step2-ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.step1-ul .step1-li, .step1-ul .step2-li, .step2-ul .step1-li, .step2-ul .step2-li {
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+
+.step1-ul .step1-li .step1-sectioin .step1-href, .step1-ul .step1-li .step1-sectioin .step2-href, .step1-ul .step1-li .step2-sectioin .step1-href, .step1-ul .step1-li .step2-sectioin .step2-href, .step1-ul .step2-li .step1-sectioin .step1-href, .step1-ul .step2-li .step1-sectioin .step2-href, .step1-ul .step2-li .step2-sectioin .step1-href, .step1-ul .step2-li .step2-sectioin .step2-href, .step2-ul .step1-li .step1-sectioin .step1-href, .step2-ul .step1-li .step1-sectioin .step2-href, .step2-ul .step1-li .step2-sectioin .step1-href, .step2-ul .step1-li .step2-sectioin .step2-href, .step2-ul .step2-li .step1-sectioin .step1-href, .step2-ul .step2-li .step1-sectioin .step2-href, .step2-ul .step2-li .step2-sectioin .step1-href, .step2-ul .step2-li .step2-sectioin .step2-href {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 14px 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.step1-ul .step1-li .step1-sectioin .step1-href:hover, .step1-ul .step1-li .step1-sectioin .step2-href:hover, .step1-ul .step1-li .step2-sectioin .step1-href:hover, .step1-ul .step1-li .step2-sectioin .step2-href:hover, .step1-ul .step2-li .step1-sectioin .step1-href:hover, .step1-ul .step2-li .step1-sectioin .step2-href:hover, .step1-ul .step2-li .step2-sectioin .step1-href:hover, .step1-ul .step2-li .step2-sectioin .step2-href:hover, .step2-ul .step1-li .step1-sectioin .step1-href:hover, .step2-ul .step1-li .step1-sectioin .step2-href:hover, .step2-ul .step1-li .step2-sectioin .step1-href:hover, .step2-ul .step1-li .step2-sectioin .step2-href:hover, .step2-ul .step2-li .step1-sectioin .step1-href:hover, .step2-ul .step2-li .step1-sectioin .step2-href:hover, .step2-ul .step2-li .step2-sectioin .step1-href:hover, .step2-ul .step2-li .step2-sectioin .step2-href:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.step1-ul .step1-li .step1-sectioin .step1-href .down-arrow, .step1-ul .step1-li .step1-sectioin .step2-href .down-arrow, .step1-ul .step1-li .step2-sectioin .step1-href .down-arrow, .step1-ul .step1-li .step2-sectioin .step2-href .down-arrow, .step1-ul .step2-li .step1-sectioin .step1-href .down-arrow, .step1-ul .step2-li .step1-sectioin .step2-href .down-arrow, .step1-ul .step2-li .step2-sectioin .step1-href .down-arrow, .step1-ul .step2-li .step2-sectioin .step2-href .down-arrow, .step2-ul .step1-li .step1-sectioin .step1-href .down-arrow, .step2-ul .step1-li .step1-sectioin .step2-href .down-arrow, .step2-ul .step1-li .step2-sectioin .step1-href .down-arrow, .step2-ul .step1-li .step2-sectioin .step2-href .down-arrow, .step2-ul .step2-li .step1-sectioin .step1-href .down-arrow, .step2-ul .step2-li .step1-sectioin .step2-href .down-arrow, .step2-ul .step2-li .step2-sectioin .step1-href .down-arrow, .step2-ul .step2-li .step2-sectioin .step2-href .down-arrow {
+  width: 17px;
+  height: 17px;
+  float: right;
+}
+
+.step2-ul {
+  margin: 0 15px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.step2-ul .step2-li {
+  border-bottom: none;
+}
+
+.step2-ul .step2-li .step2-section .step2-href {
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 15px;
+}
+
+.step2-ul .step2-li .step2-section .step2-href .right-arrow {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.page-background {
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 28;
+}
+/*# sourceMappingURL=style.css.map */
